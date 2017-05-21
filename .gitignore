@@ -1,6 +1,7 @@
 # msserpa
 *.optrpt
 *.exec
+tmp
 
 
 # Prerequisites
