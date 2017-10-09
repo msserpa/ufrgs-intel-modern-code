@@ -1,5 +1,5 @@
 COMPILER = icc
-FLAGS = -no-vec -qopenmp -mmic -Wall -Wextra
+FLAGS = -no-vec -qopenmp -Wall -Wextra
 
 all: matrixMultiplicationOffload.exec
 	@echo "Compiled!"
