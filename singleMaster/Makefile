@@ -1,7 +1,7 @@
 COMPILER = icc
-FLAGS = -no-vec -qopenmp -Wall -Wextra
+FLAGS = -no-vec -qopenmp -xHost -Wall -Wextra
 
-all: matrixMultiplicationOffload.exec
+all: singlemaster.exec
 	@echo "Compiled!"
 
 %.exec: %.o
