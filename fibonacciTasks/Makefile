@@ -1,7 +1,7 @@
 COMPILER = icc
-FLAGS = -no-vec -qopenmp -Wall -Wextra
+FLAGS = -lm -no-vec -qopenmp -xHost -Wall -Wextra
 
-all: matrixMultiplicationOffload.exec
+all: fibonacciTask.exec fibonacciTaskPar.exec
 	@echo "Compiled!"
 
 %.exec: %.o

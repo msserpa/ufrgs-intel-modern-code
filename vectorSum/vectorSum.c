@@ -4,12 +4,12 @@
 #include <omp.h>
 
 long long int sum(int *v, long long int N){
-	long long int i, sum = 0;
+	long long int i, auxsum = 0;
 
 	for(i = 0; i < N; i++)
-		sum += v[i];
+		auxsum += v[i];
 
-	return sum;
+	return auxsum;
 }
 
 int main(int argc, char **argv){
